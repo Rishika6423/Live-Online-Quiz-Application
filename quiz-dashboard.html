@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Dashboard | QuizApp</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">QuizApp Admin</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+    </div>
+  </nav>
+
+  <div class="dashboard">
+    <h2>Create Quiz</h2>
+    <form id="createQuizForm">
+      <input type="text" id="quizTitle" placeholder="Quiz Title" required>
+      <button type="submit">Create Quiz</button>
+    </form>
+    <p id="generatedCode"></p>
+
+    <h3>Add Questions</h3>
+    <form id="addQuestionForm">
+      <input type="text" id="questionText" placeholder="Question" required>
+      <input type="text" id="option1" placeholder="Option 1" required>
+      <input type="text" id="option2" placeholder="Option 2" required>
+      <input type="text" id="option3" placeholder="Option 3" required>
+      <input type="text" id="option4" placeholder="Option 4" required>
+      <input type="text" id="correctOption" placeholder="Correct Answer" required>
+      <button type="submit">Add Question</button>
+    </form>
+
+    <h3>Quiz Preview</h3>
+    <ul id="questionList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

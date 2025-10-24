@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  background: #ECF0F1;
+  color: #34495E;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2C3E50;
+  color: white;
+  padding: 15px 40px;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.btn {
+  display: inline-block;
+  background: #18BC9C;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #15A589;
+}
+
+.form-container,
+.dashboard,
+.quiz-container {
+  width: 400px;
+  max-width: 90%;
+  margin: 50px auto;
+  background: #FFF;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 5px;
+  border: 1px solid #BDC3C7;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #18BC9C;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #15A589;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80vh;
+  padding: 20px;
+  background: #D6EAF8;
+  color: #2C3E50;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  margin-top: 10px;
+}
+
+.question-block {
+  background: #FFF;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.option-label {
+  display: flex; 
+  align-items: center;  
+  gap: 10px; 
+  margin: 8px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Optional: adjust radio button size */
+.option-label input[type="radio"] {
+  width: 18px;
+  height: 18px;
+}
+
+
+#result {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #18BC9C;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+th,
+td {
+  border: 1px solid #BDC3C7;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background: #2C3E50;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background: #ECF0F1;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #2C3E50;
+  color: white;
+  margin-top: 50px;
+}
