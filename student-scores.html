@@ -8,13 +8,12 @@
 </head>
 <body>
   <nav class="navbar">
-    <div class="logo">QuizApp Admin</div>
+    <div class="logo"> QuizApp Admin </div>
     <div class="nav-links">
-      <a href="quiz-dashboard.html">Dashboard</a>
-      <a href="index.html">Home</a>
+      <a href="quiz-dashboard.html"> Dashboard </a>
+      <a href="index.html"> Home </a>
     </div>
   </nav>
-
   <div class="dashboard">
     <h2>Student Scores</h2>
     <table id="scoresTable">
@@ -27,13 +26,12 @@
       <tbody></tbody>
     </table>
   </div>
-
   <script>
-    const tableBody=document.querySelector("#scoresTable tbody");
-    const allScores=JSON.parse(sessionStorage.getItem("allScores"))||[];
+    const tableBody = document.querySelector("#scoresTable tbody");
+    const allScores = JSON.parse(sessionStorage.getItem("allScores"))||[];
     allScores.forEach(score=>{
       const tr=document.createElement("tr");
-      tr.innerHTML=`<td>${score.name}</td><td>${score.score} / ${score.total}</td>`;
+      tr.innerHTML = `<td>${score.name}</td><td>${score.score} / ${score.total}</td>`;
       tableBody.appendChild(tr);
     });
   </script>
