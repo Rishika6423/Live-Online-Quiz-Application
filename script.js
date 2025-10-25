@@ -1,8 +1,7 @@
-// ---------------- Load Existing Data ----------------
 let quizzes = JSON.parse(localStorage.getItem("quizzes")) || {};
 let allScores = JSON.parse(localStorage.getItem("allScores")) || [];
 
-// ---------------- Admin Signup/Login ----------------
+// Admin Signup/Login
 document.getElementById("adminSignupForm")?.addEventListener("submit", e => {
   e.preventDefault();
   alert("Admin signed up!");
@@ -16,7 +15,7 @@ document.getElementById("adminLoginForm")?.addEventListener("submit", e => {
   window.location.href = "quiz-dashboard.html";
 });
 
-// ---------------- User Signup/Login ----------------
+// User Signup/Login
 document.getElementById("userSignupForm")?.addEventListener("submit", e => {
   e.preventDefault();
   alert("User signed up!");
@@ -37,7 +36,7 @@ document.getElementById("userLoginForm")?.addEventListener("submit", e => {
   window.location.href = "play-quiz.html";
 });
 
-// ---------------- Generate Random Quiz Code ----------------
+// Generate Random Quiz Code 
 function generateQuizCode(length = 6) {
   const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
   let code = "";
@@ -47,7 +46,7 @@ function generateQuizCode(length = 6) {
   return code;
 }
 
-// ---------------- Admin Create Quiz ----------------
+// Admin Create Quiz 
 document.getElementById("createQuizForm")?.addEventListener("submit", e => {
   e.preventDefault();
   const title = document.getElementById("quizTitle")?.value.trim();
@@ -62,7 +61,7 @@ document.getElementById("createQuizForm")?.addEventListener("submit", e => {
   e.target.reset();
 });
 
-// ---------------- Admin Add Questions ----------------
+// Admin Add Questions 
 document.getElementById("addQuestionForm")?.addEventListener("submit", e => {
   e.preventDefault();
   const code = localStorage.getItem("lastQuizCode");
@@ -94,7 +93,7 @@ document.getElementById("addQuestionForm")?.addEventListener("submit", e => {
   e.target.reset();
 });
 
-// ---------------- Play Quiz ----------------
+//  Play Quiz
 const quizContainer = document.getElementById("quiz");
 const resultContainer = document.getElementById("result");
 const submitButton = document.getElementById("submitQuiz");
