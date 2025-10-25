@@ -1,7 +1,7 @@
 Live Online Quiz Application (Frontend)
 
 This is a simple Online Quiz Application built using HTML, CSS, and JavaScript with localStorage for data persistence.  
-It allows Admins to create quizzes, manage questions, and view user scores, while Users can join quizzes using unique quiz codes and attempt them.
+It allows Admins to create quizzes, manage questions, and view user scores, while Users can join quizzes using unique quiz codes(private code) and attempt them.
 
 Features:
 1)Admin Side
